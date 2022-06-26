@@ -8,10 +8,10 @@ class SouscripteursSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Souscripteurs
-        fields = ['nom', 'dateEffet', 'dateEcheance', 'assureur', 'territorialite', 'consultationGeneraliste', 'consultationSpecialiste', 'pharmacie', 'vitamines', 'vaccins', 'hospitalisation', 'created']
+        fields = ['id', 'nom', 'dateEffet', 'dateEcheance', 'assureur', 'territorialite', 'consultationGeneraliste', 'consultationSpecialiste', 'pharmacie', 'vitamines', 'vaccins', 'hospitalisation', 'created']
 
 class AssureursSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Assureurs
-        field = ['nom', 'adresseMail', 'created']
+        field = ['id', 'nom', 'adresseMail', 'created']
