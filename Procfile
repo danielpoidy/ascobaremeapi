@@ -1,0 +1,1 @@
+web: gunicorn baremebackend.wsgi --log-file -
