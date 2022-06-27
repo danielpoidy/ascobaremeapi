@@ -16,9 +16,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG',cast=bool)
+DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS = ['127.0.0.1', 'ascobareme.herokuapp.com/']
+# ALLOWED_HOSTS = ['127.0.0.1', 'ascobareme.herokuapp.com/']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
