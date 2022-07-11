@@ -114,9 +114,9 @@ USE_TZ = True
 
 CORS_ALLOW_ALL_ORIGINS: True
 
-CORS_ALLOW_METHODS = [
-    "GET"
-]
+# CORS_ALLOW_METHODS = [
+#     "GET"
+# ]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
