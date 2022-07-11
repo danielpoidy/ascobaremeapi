@@ -17,7 +17,7 @@ class Souscripteur(models.Model):
     nom = models.CharField(max_length=100)
     dateEffet = models.DateField()
     dateEcheance = models.DateField()
-    assureur = models.ForeignKey(Assureurs, on_delete=models.CASCADE)
+    assureur = models.ForeignKey(Assureur, on_delete=models.CASCADE)
     territorialite = models.CharField(max_length=100)
     consultationGeneraliste = models.IntegerField()
     consultationSpecialiste = models.IntegerField()
