@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Souscripteurs, Assureurs
+from .models import Souscripteur, Assureur
 
 
 class SouscripteursSerializer(serializers.ModelSerializer):
@@ -7,11 +7,12 @@ class SouscripteursSerializer(serializers.ModelSerializer):
     # poster_id = serializers.ReadOnlyField(source='poster.id')
 
     class Meta:
-        model = Souscripteurs
+        model = Souscripteur
         fields = ['id', 'nom', 'dateEffet', 'dateEcheance', 'assureur', 'territorialite', 'consultationGeneraliste', 'consultationSpecialiste', 'pharmacie', 'vitamines', 'vaccins', 'hospitalisation', 'created']
+
 
 class AssureursSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = Assureurs
+        model = Assureur
         field = ['id', 'nom', 'adresseMail', 'created']

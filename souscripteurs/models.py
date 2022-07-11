@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Assureurs(models.Model):
+class Assureur(models.Model):
     nom = models.CharField(max_length=100)
     adresseMail = models.EmailField()
     created = models.DateTimeField(auto_now_add=True)
@@ -13,7 +13,7 @@ class Assureurs(models.Model):
         return self.nom
 
 
-class Souscripteurs(models.Model):
+class Souscripteur(models.Model):
     nom = models.CharField(max_length=100)
     dateEffet = models.DateField()
     dateEcheance = models.DateField()
